@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Code of Reality</title>
+<meta name="description" content="Privacy policy for Code of Reality, a LiDAR room-scanning app for iPhone. No data is collected.">
+<style>
+  :root {
+    --ground: #FBFCFB;
+    --text: #161A16;
+    --muted: #5A645A;
+    --accent: #0E7A38;
+    --rule: #DDE4DD;
+    --card: #F2F5F2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0A0C0A;
+      --text: #D8E0D8;
+      --muted: #8A968A;
+      --accent: #3FE07A;
+      --rule: #1E2A1E;
+      --card: #101410;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  main {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+  }
+  .eyebrow {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.75rem;
+  }
+  h1 {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 1.75rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    text-wrap: balance;
+  }
+  .dateline {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0 0 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  h2 {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 2.75rem 0 0.75rem;
+    text-wrap: balance;
+  }
+  p { margin: 0 0 1.1rem; }
+  ul { margin: 0 0 1.1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  .lede {
+    background: var(--card);
+    border-left: 2px solid var(--accent);
+    padding: 1.25rem 1.25rem 0.25rem;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 1rem;
+  }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Code of Reality</p>
+  <h1>Privacy Policy</h1>
+  <p class="dateline">Effective August 9, 2026</p>
+
+  <div class="lede">
+    <p><strong>Code of Reality does not collect your data.</strong> There are no accounts,
+    no analytics, no advertising, no third-party SDKs, and no servers. The app contains no
+    networking code at all. Everything it makes stays on your iPhone until you choose to
+    share it.</p>
+  </div>
+
+  <h2>What the app uses while running</h2>
+  <p><strong>Camera and LiDAR scanner.</strong> Code of Reality reads the camera image and
+  the LiDAR depth sensor to find the shape of the room around you and draw on top of it.
+  This happens live, on the device.</p>
+  <p><strong>Device motion.</strong> The app reads the accelerometer and gyroscope to keep
+  tracking steady in the dark (Night Mode). This is the orientation and movement of the
+  phone only. It is not activity or fitness tracking, and it is not location.</p>
+  <p>The app does not use location services, the microphone, your contacts, your photo
+  library, or health data.</p>
+
+  <h2>What the app saves on your iPhone</h2>
+  <p>When you save a scan, Code of Reality writes a scene file into its own private storage.
+  A scene contains:</p>
+  <ul>
+    <li>the 3D shape of the scanned room, and the colors sampled from the camera</li>
+    <li>the path you walked while scanning</li>
+    <li>Apple's ARKit world map, which lets the app recognize the room again later</li>
+    <li>a small number of <strong>photographs</strong> — low-resolution stills (640 pixels
+        or less) captured during the scan, which the app shows as a faded guide so you can
+        line the phone back up when continuing a scan</li>
+    <li>a thumbnail image of the finished scene, for the gallery</li>
+  </ul>
+  <p>Those photographs are pictures of your room. They never leave the device on their own,
+  but they are worth knowing about.</p>
+  <p>Scene files live in the app's own storage, which other apps cannot read. Deleting the
+  app deletes every scene with it. You can also delete individual scans in the gallery.</p>
+  <p><strong>Backups.</strong> Because scenes are stored in the app's Documents area, they
+  are included in an iCloud or computer backup of your iPhone, the same way most app data
+  is. Those backups are governed by Apple's privacy policy and your own backup settings,
+  not by this one.</p>
+
+  <h2>What leaves your iPhone</h2>
+  <p>Nothing, unless you choose to send it.</p>
+  <p>The app can export a scan as a 3D model (USDZ) or as a picture (PNG) and hands it to
+  the standard iOS share sheet. You pick the destination — Messages, Mail, AirDrop, Files,
+  or another app. What happens to the file after that is governed by whichever service you
+  chose. If a scan shows the inside of your home, please consider who you are sending it to.</p>
+
+  <h2>Third parties</h2>
+  <p>There are none. Code of Reality contains no analytics, no crash-reporting service, no
+  advertising identifier, and no tracking of any kind. Nothing about your use of the app is
+  transmitted to the developer or to anyone else.</p>
+
+  <h2>Children</h2>
+  <p>Code of Reality does not collect personal information from anyone, including children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted here with a new effective
+  date. Because the app collects nothing, changes are expected to be rare.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy in Code of Reality:<br>
+  <a href="mailto:charles.atreides@proton.me">charles.atreides@proton.me</a></p>
+
+  <footer>Code of Reality — privacy policy, last updated August 9, 2026.</footer>
+</main>
+</body>
+</html>
